@@ -15,6 +15,14 @@ function addTodo(e){
         todoDiv.appendChild(newTodo);
         toodoList.appendChild(todoDiv);
         todoInput.value = '';
+        const completedButton = document.createElement('button');
+        completedButton.innerHTML = '<i class="fas fa-check"></i>';
+        completedButton.classList.add('completed-btn');
+        todoDiv.appendChild(completedButton);
+        const trashButton = document.createElement('button');
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        trashButton.classList.add('trash-btn');
+        todoDiv.appendChild(trashButton);
     }else{
         alert('Please Enter a Task')
     }    
