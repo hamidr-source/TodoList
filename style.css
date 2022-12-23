@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9ab8ba;
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+h1{
+    background-image: -webkit-linear-gradient(
+        110deg,
+        #7d69aa,
+        #c775e7
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header{ 
+    font-size: 1.5rem;
+} 
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-input,
+.todo-btn{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+}
+.todo-btn{
+    color: #9ab8ba;
+    background-color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.todo-btn:hover{
+    background: #9ab8ba;
+    color: white;
+    box-shadow:
+    0 0 2px #9ab8ba,
+    0 0 4px #9ab8ba,
+    0 0 6px #9ab8ba,
+    0 0 8px #9ab8ba;
+}
+.todo-input:focus{
+    outline: none;
+}
